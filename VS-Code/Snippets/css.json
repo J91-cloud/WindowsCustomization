@@ -1,0 +1,37 @@
+{
+	
+		"colorChange": {
+  			"prefix": "colorChange",
+  		"body": [
+    		".colorChange {",
+    		"\tcolor: red;",
+    	"}"
+  		],
+  		"description": "Creates a CSS class that changes text color to red"
+		},
+
+		"fontSize":{
+			"prefix": "fontSize",
+			"body":[
+				"font-size: ${1}px;"
+			],
+			"description": "Change the fontsize of an element"
+		},
+
+		"transition":{
+			"prefix": "transition",
+			"body": [
+				".transition {",
+				"\t transition: all 0.6s",
+				"}",
+				"",
+				".transition:hover {",
+				"transform: scale(1.1)",
+				"}"
+			],
+			"description": "Creates a Transition for a little hover"
+		}
+
+	  
+	  
+}
