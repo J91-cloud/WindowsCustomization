@@ -3,6 +3,7 @@ function power {cd "C:\Users\jessy\Documents\Powershell-scripts"}
 function alerts-fe {cd "C:\Users\jessy\Documents\Final Project\ECP\league_alerts-ChamplainECP\computer_alerts-fe"}
 function alerts-be {cd "C:\Users\jessy\Documents\Final Project\ECP\league_alerts-ChamplainECP\computer_alerts-be"}
 function WindowsCustomization { cd "C:\Users\jessy\Documents\WindowsCustomization" }
+function ftxui-go {cd "C:\Users\jessy\CLionProjects\Demo\build\Debug"}
 
 
 function codex {
