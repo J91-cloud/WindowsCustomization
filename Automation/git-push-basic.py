@@ -2,7 +2,7 @@ import os;
 import subprocess;
 import argparse;
 
-
+##Command function
 def run_command(command, cwd=None):
     GREEN = "\033[92m" ##MAke the command green.
     RESET = "\033[0m"
