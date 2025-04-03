@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+
+
+/* Card Container */
+.specifications {
+    position: relative;
+    width: 50%;
+    margin-left: 410px;
+   
+    padding: 30px 25px;
+    background: #203151;  /* Dark Blue Background */
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 150, 255, 0.3); /* Subtle neon border */
+    overflow: hidden;
+    transition: border 0.4s ease, box-shadow 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+/* Hover Effect */
+.specifications:hover {
+    border: 2px solid rgba(0, 150, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.5);
+}
+
+/* Subtle Neon Line Effect */
+.specifications::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    background: linear-gradient(90deg, transparent, rgba(0, 150, 255, 0.6), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.specifications:hover::before {
+    opacity: 1;
+}
+
+/* Title */
+.specifications h1 {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 700;
+    color: #00aaff;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    position: relative;
+    animation: slideRight 0.6s forwards 0.4s;
+}
+
+/* Underline Effect for Title */
+.specifications h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 50px;
+    height: 2px;
+    background: #00aaff;
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.specifications:hover h1::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Description */
+.specifications p {
+    color: #1774a3;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.6s forwards 0.6s;
+}
+
+/* Subtle Glow Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .specifications {
+        width: 90%;
+        padding: 20px;
+    }
+}

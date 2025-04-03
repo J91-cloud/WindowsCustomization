@@ -41,6 +41,7 @@ function renderTodoList() {
     textSpan.textContent = task.text;
     itemContent.appendChild(textSpan);
     
+
     // Create delete button
     const deleteBtn = document.createElement('span');
     deleteBtn.className = 'todo-delete';
@@ -66,6 +67,7 @@ function renderTodoList() {
     todoList.appendChild(li);
   });
 }
+
 
 // Initialize the todo list functionality
 function initTodoList() {
