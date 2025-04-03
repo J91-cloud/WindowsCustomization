@@ -1,0 +1,12 @@
+.header {
+    font-weight: 700;
+    color:rgb(226, 114, 114);
+    font-size: 30px;
+}
+.border{
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+.padding{
+    padding: 20px;
+}
