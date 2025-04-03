@@ -2,10 +2,86 @@
 <html>
 <head>
     <title>MSFT Stock Data</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="meta-data"></div>
-    <div id="daily-data"></div>
+    <div class="stock-card" id="dji-card">
+        <div class="stock-header">
+            <h2 class="stock-title">NVIDIA</h2>
+            <p class="stock-subtitle" data-loading></p>
+        </div>
+        <div class="stock-data">
+            <div class="data-row">
+                <span class="data-label">Price:</span>
+                <span data-price></span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Change:</span>
+                <span data-change></span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Range:</span>
+                <span data-range></span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Volume:</span>
+                <span data-volume></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- S&P 500 Card -->
+    <div class="stock-card" id="inx-card">
+        <div class="stock-header">
+            <h2 class="stock-title">S&P 500</h2>
+            <p class="stock-subtitle" data-loading></p>
+        </div>
+        <div class="stock-data">
+            <div class="data-row">
+                <span class="data-label">Price:</span>
+                <span data-price></span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Change:</span>
+                <span data-change></span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Range:</span>
+                <span data-range></span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Volume:</span>
+                <span data-volume></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Amazon Card -->
+    <div class="stock-card" id="amzn-card">
+        <div class="stock-header">
+            <h2 class="stock-title">Amazon</h2>
+            <p class="stock-subtitle" data-loading></p>
+        </div>
+        <div class="stock-data">
+            <div class="data-row">
+                <span class="data-label">Price:</span>
+                <span data-price></span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Change:</span>
+                <span data-change></span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Range:</span>
+                <span data-range></span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Volume:</span>
+                <span data-volume></span>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
